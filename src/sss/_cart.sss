@@ -1,0 +1,323 @@
+.cart
+	margin: 40px 0 0
+	border: none
+
+.cart-table
+	width: 100%
+	border-collapse: collapse
+
+	*
+		box-sizing: border-box
+
+		&:after, &:before
+			box-sizing: inherit
+
+	th
+		text-align: left
+		padding: 20px 0 22px
+		text-transform: uppercase
+		font-family: "ProximaNova ExtraBold",sans-serif
+		letter-spacing: 1px
+		-webkit-font-smoothing: antialiased
+		font-size: 16px
+
+		&:first-child
+			padding-left: 65px
+
+	td
+		vertical-align: middle
+
+	&__remove
+		text-align: right
+
+	&__img
+		text-align: center
+
+	&__name
+		max-width: 290px
+
+	thead, tfoot
+		background: var(--second-color)
+
+	tfoot
+
+		td
+			padding: 19px 42px 18px
+
+			&:last-child
+				text-align: right
+
+	tbody
+
+		td
+			padding: 20px 0
+
+		tr
+
+			&:not(:last-child)
+
+				td
+					border-bottom: 1px solid var(--border-color)
+
+.cart-item
+
+	&__name
+		max-width: 290px
+		display: block
+		font-family: "ProximaNova Bold",sans-serif
+		text-transform: uppercase
+		color: #000
+		font-size: 16px
+
+.promokod
+
+	form
+		display: flex
+		align-items: center
+		flex-direction: row-reverse
+		justify-content: flex-end
+
+	&__input, &__label
+		flex: none
+
+	&__label
+		margin-right: 27px
+
+	&__input
+		border: none
+		background: #fff
+		padding: 3px 10px
+		size: 112px 43px
+
+.item
+	padding: 11px 0 0
+
+	&.size, &.color
+
+		.title
+			text-transform: uppercase
+			font-size: 12px
+			margin-right: 6px
+			color: rgba(0,0,0,.4)
+
+		.value
+			font-family: "ProximaNova Bold",sans-serif
+	
+	&.color
+
+		.value
+			display: inline-block
+			width: 16px
+			height: 16px
+			border-radius: 18px
+			vertical-align: middle
+
+.cart-itog
+	font-weight: bold
+	font-size: rem(20)
+	line-height: lh(35, 20)
+	white-space: nowrap
+
+.cart__btns
+	display: flex
+	justify-content: flex-end
+	margin: 42px 0 0
+
+	a
+		display: flex
+		align-items: center
+
+		&:not(:last-child)
+			margin-right: 19px
+
+.counter
+	display: flex
+	align-items: center
+
+	&__btn, input
+		flex: none
+
+	input
+		border: none
+		width: 30px
+		text-align: center
+		padding: 0 7px
+		color: #000
+		letter-spacing: 1px
+		font-size: 12px
+		font-family: "ProximaNova Bold",sans-serif
+		text-transform: uppercase
+		-webkit-font-smoothing: antialiased
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button
+			-webkit-appearance: none
+			appearance: none
+			margin: 0
+
+	&__btn
+		size: 16px
+		position: relative
+		border-radius: 50%
+
+		&--minus
+			background: url("../images/icons_count-down.svg") center no-repeat, rgba(0,0,0,.1)
+
+		&--plus
+			background: url("../images/icons_count-up.svg") center no-repeat, rgba(0,0,0,.1)
+
+
+@media screen and (max-width: 1000px)
+	.cart-table
+
+		th
+
+			&:first-child
+				padding-left: 18px
+
+		tbody
+
+			td
+				padding-top: 15px
+				padding-bottom: 15px
+
+				&:not(:last-child)
+					padding-right: 18px
+
+		tfoot
+
+			td
+				padding: 18px
+
+	.cart-item
+
+		&__img
+			display: block
+			width: 110px
+
+	.cart
+
+		&__btns
+			margin: 18px 0 0
+
+	.catalog2
+
+		&__top
+			border: 1px solid var(--border-color)
+			align-items: center
+			justify-content: space-between
+			margin-left: 0
+
+			&-filter, &-sort
+				width: auto
+				margin-left: 0
+
+			.sort
+				border: none
+			
+			&-sort
+				flex: 1 1 auto
+
+@media screen and (max-width: 600px)
+	.cart-itog
+		text-align: left
+
+	.cart__btns
+		flex-direction: column
+
+		.arrow-btn
+			margin-right: 0 !important
+
+			&:not(:first-child)
+				margin: 18px 0 0
+
+	.cart-table
+		display: flex
+		flex-direction: column
+
+		tfoot
+			order: 1
+			margin: 30px 0 0
+
+			tr
+				flex-direction: column
+
+			td
+
+				&:last-child
+					padding-top: 0
+
+		tbody, tfoot, td
+			display: block
+
+		thead
+			display: none
+
+		tr
+			display: flex
+			flex-wrap: wrap
+			position: relative
+
+			&:not(:first-child)
+				padding: 60px 0 0
+
+			&:before
+				// content: ""
+				position: absolute 0 0 * 0
+				height: 30px
+				background: var(--second-color)
+
+			&:first-child
+
+				.cart-table__remove
+					top: 0
+
+		tbody
+
+			tr:last-child
+
+				td
+					border-bottom: 1px solid var(--border-color)
+
+		&__remove
+			position: absolute 50px 0 * *
+			padding: 0 !important
+			border: none !important
+
+			.remove
+				text-indent: 0
+				overflow: visible
+				color: var(--main-color)
+				background: none
+				size: auto
+
+		&__img
+			width: 35%
+			padding-top: 0 !important
+
+		&__name
+			width: 65%
+			padding-right: 0 !important
+			padding-top: 30px !important
+			max-width: none
+
+		&__price, &__count, &__total
+			width: 100%
+			padding-right: 0 !important
+
+		td
+
+			&[data-label]
+				display: flex
+				align-items: center
+
+				&:before
+					content: attr(data-label)
+					display: inline-block
+					padding-right: 16px
+					width: 38%
+
+	.cart-item
+
+		&__img
+			width: auto

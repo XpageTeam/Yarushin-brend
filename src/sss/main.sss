@@ -1,0 +1,288 @@
+@import "_vars.sss"
+
+@import "../css/plugins.min.css"
+@import "../css/styles.css"
+
+@import "_cart.sss"
+@import "_ordering.sss"
+
+.catalogue
+
+
+	&__views
+
+		.bx-filter
+			// display: none
+
+			&-section
+				background: none !important
+
+			&-block
+				position: relative
+
+				&-
+
+			&-container-modef
+				display: none !important
+			&-parameters
+
+				&-box
+					margin-left: -15px
+
+					&-title span
+						position: relative
+						padding: 12px 25px 13px 15px
+						transition: all .3s
+						display: inline-block
+						cursor: pointer
+						font-family: ProximaNova Bold,sans-serif
+						letter-spacing: 1px
+						-webkit-font-smoothing: antialiased
+						text-transform: uppercase
+						font-size: 12px
+
+						&:after
+							content: ""
+							position: absolute calc(50% - 5px) 9px * *
+							size: 4px
+							border-right: 1px solid var(--main-color)
+							border-bottom: 1px solid var(--main-color)
+							transform: rotate(45deg)
+
+						i
+							display: none
+
+					&-container
+						z-index: 500
+						display: none
+						position: absolute
+						top: 100%
+						left: 0
+						margin: 0
+						min-width: 100%
+						max-height: 400px
+						overflow-y: auto
+						padding: 0
+						-webkit-backdrop-filter: blur(10px)
+						background-image: linear-gradient(rgba(0,0,0,.05) 0,rgba(0,0,0,.05) 100%),linear-gradient(rgba(255,255,255,.8) 0,rgba(255,255,255,.8) 100%)
+
+						&-block
+							display: none
+
+					&.bx-active
+
+						.bx-filter-parameters-box
+
+							&-title span
+								background: var(--main-color)
+								color: #fff
+
+								&:after
+									border-color: currentColor
+
+							&-container
+								display: block
+
+		.dropdown.state_active
+			min-width: 200px
+
+		.clb
+			display: none
+
+		div[class="row"]
+
+			&:not(:last-child)
+				margin-right: 25px
+
+			&:not(:first-child)
+				// display: none
+
+				.bx-filter-parameters-box-container
+					display: flex
+					position: static
+					background: none !important
+
+					.btn
+						border: none
+						font-family: ProximaNova Bold,sans-serif
+						letter-spacing: 1px
+						-webkit-font-smoothing: antialiased
+						color: #fff
+						cursor: pointer
+						display: flex
+						justify-content: center
+						align-items: center
+						padding: 13px 30px 12px
+						text-transform: uppercase
+						font-size: 12px
+						border: none
+						outline: 0
+						background: 0 0
+						background-repeat: no-repeat
+
+						&:not(:last-child)
+							margin-right: 15px
+
+						&-themes, &-link
+							background-color: #1951da
+							background-image: linear-gradient(to top,#000 100%,transparent 100%)
+							background-position: 0 60px
+							background-size: 100% 100%
+							transition: background-position .3s,opacity 4s ease-in
+
+							&:hover
+								background-position: 0 -1px
+
+			&:first-child
+				display: flex
+				flex-direction: row-reverse
+
+				.col-lg-12
+
+					&:not(:first-child)
+						margin-right: 32px
+
+
+					&:first-child
+
+						.bx-filter-parameters-box-title
+
+		.checkbox
+			position: relative
+			width: auto
+
+			input[type="checkbox"]
+				position: absolute 0 * * 0
+				pointer-events: none
+				opacity: 0
+
+				&:checked
+
+					+ span
+
+						&:before
+							background: url(../images/icons_checked.svg) center center no-repeat #fff
+							background-size: 60%
+							border-color: #1951da
+
+			.bx-filter-param-text
+				cursor: pointer
+				display: flex
+				height: 100%
+				box-sizing: border-box
+				align-items: center
+				position: relative
+				padding: 0 15px 0 39px
+				font-family: "ProximaNova Bold",sans-serif
+				letter-spacing: 1px
+				font-size: 12px
+				-webkit-font-smoothing: antialiased
+				color: #000
+				text-transform: uppercase
+
+				&:before
+					content: ''
+					position: absolute
+					left: 14px
+					top: 50%
+					transform: translateY(-50%)
+					width: 15px
+					height: 15px
+					border: 1px solid rgba(0,0,0,.15)
+					background-color: #fff
+					transition: border-color .3s
+
+.bx-ui-slider
+
+	&-track
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin: 20px 18px 30px
+		position: relative
+		background: none !important
+		min-width: 200px
+
+		.p1, .p5
+			display: block
+			width: 50%
+			letter-spacing: 1px
+			color: #000
+			font-family: "ProximaNova Bold",sans-serif
+			font-size: 12px
+			-webkit-font-smoothing: antialiased
+			text-transform: uppercase
+
+			&:after
+				content: " руб."
+
+		.p5
+			text-align: right
+
+		.p2, .p3, .p4
+			display: none
+
+	&-pricebar
+
+		&-vd, &-vn
+			display: none
+
+		&-v
+			position: absolute
+			bottom: -3px
+			height: 3px
+			background: #1951da !important
+
+	&-range
+		width: 100%
+		height: 3px
+		border: none
+		background-color: transparent
+		position: relative
+		margin: 16px 0 0
+
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 0
+			width: 100%
+			height: 3px
+			background-color: rgba(0,0,0,.1)
+
+	&-handle
+		cursor: pointer
+		margin-top: -7px
+		width: 10px
+		height: 20px
+		border: none
+		border-radius: 0
+		display: block
+		position: absolute
+		outline: 0
+		background: #1951da !important
+
+
+@media screen and (max-width: 767px)
+	.catalogue__filter
+		flex-direction: column
+		align-items: flex-start
+
+	.catalogue__views 
+
+		&:not(:first-child)
+			margin: 15px 0 0
+
+		form
+			flex-direction: column
+			align-items: flex-start
+
+			> .row
+
+				&:not(:first-child)
+					margin: 18px 0 0
+
+	.catalogue__views div[class=row]:first-child
+		flex-direction: column-reverse
+		align-items: flex-start
