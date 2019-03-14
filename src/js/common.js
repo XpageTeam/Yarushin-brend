@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", e => {
 		if (!bxFilterTitle.length)
 			return
 
-		let i = 0;
+		let i = 0; 
 
 		for (var title of bxFilterTitle){
 			title.index = i
