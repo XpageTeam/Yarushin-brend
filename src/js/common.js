@@ -1,3 +1,5 @@
+import "./top-message.js"
+
 document.addEventListener("DOMContentLoaded", e => {
 
 	;(function(){

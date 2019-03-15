@@ -134,7 +134,7 @@ gulp.task("deploy:js", () =>
 );
 
 gulp.task("deploy:img", () => 
-	gulp.src("dist/images/**/*", {since: gulp.lastRun("deploy:images")})
+	gulp.src("dist/images/**/*", {since: gulp.lastRun("deploy:img")})
 		.pipe(server_conn.dest(remotePathImg))
 );
 

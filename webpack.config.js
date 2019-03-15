@@ -89,10 +89,13 @@ module.exports = [{
 			}
 		]
 	},
-	// resolve: {
-	// 	alias: {
-	// 		snapsvg: 'snapsvg/dist/snap.svg.js',
-	// 	}
-	// },
+	resolve: {
+		alias: {
+			vue$: "vue/dist/vue.esm.js",
+			// "ui-slider": "jquery-ui/ui/widgets/slider.js",
+			modules: path.join(__dirname, "node_modules"),
+		},
+		extensions: ['*', '.js', '.vue', '.json']
+	},
 	plugins: plugins
 }];
