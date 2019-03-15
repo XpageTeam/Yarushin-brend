@@ -291,17 +291,20 @@
 	top: 0
 	left: 0
 	width: 100%
-	padding: 15px 1.4rem
+	padding: 38px 1.4rem
 	text-align: center
 	z-index: 9999
-	background: #fff !important
+	color: #fff
+
+	a
+		border-bottom: 1px solid currentColor
 
 	&__transition
 
 		&-enter, &-leave
 
 			&-active
-				transition: transform .3s ease
+				transition: transform .6s ease
 
 		&-enter
 			//transform: translate3d(0, 0, 0)
@@ -311,16 +314,14 @@
 
 	&.error
 		background: var(--main-color)
-		color: #fff
 		// border-bottom: 1px solid $border-color
 
 		a
 			color: inherit
 
 	&.notify
-		color: #000
-		background: var(--second-color)
-		border-bottom: 1px solid var(--border-color)
+		background: var(--main-color)
+		// border-bottom: 1px solid var(--border-color)
 
 		a
 			color: inherit
