@@ -2749,7 +2749,7 @@ text-transform:uppercase
 height:100%
 }
 
-.figure__img {
+/*.figure__img {
 height:100%;
 width:100%;
 -o-object-fit:cover;
@@ -2760,7 +2760,7 @@ opacity:1;
 -webkit-transition:all .6s;
 -o-transition:all .6s;
 transition:all .6s
-}
+}*/
 
 .figure__item:first-child {
 position:relative;
