@@ -6264,6 +6264,10 @@ width:50%;
 height:450px
 }
 
+.teaser__item .figure__item{
+	background: #dddddf;
+}
+
 @media (max-width:757px) {
 .teaser {
 -webkit-box-orient:vertical;
