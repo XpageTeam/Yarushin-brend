@@ -1,6 +1,9 @@
 import "./top-message.js"
+import "./jquery.fancybox.js"
 
 document.addEventListener("DOMContentLoaded", e => {
+
+	require("../css/jquery.fancybox.css")
 
 	;(function(){
 		let titles = document.querySelectorAll(".od__title-cont");
@@ -40,4 +43,10 @@ document.addEventListener("DOMContentLoaded", e => {
 			i++
 		}
 	})()
+
+	$(".fancybox").fancybox({
+		trapFocus: false,
+		touch: false,
+		buttons: ["fullscreen", "slideShow", "close"],
+	})
 })

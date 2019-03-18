@@ -353,3 +353,56 @@
 
 		&-img
 			margin: 0 0 20px
+
+.dropdown-wrapper
+	position: relative
+
+.sizes-table
+	position: absolute calc(100% + 10px) * * 0
+
+	&__link
+		text-transform: uppercase
+		font-family: "ProximaNova Bold",sans-serif
+		font-size: 12px
+		color: var(--main-color)
+
+.table-size
+	padding: 0 0 0 30px
+	position: relative
+
+	&:before
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCNzlBMTQ5OTAwMkJFNTExQUJDOEFDQjJBNEZDMjU1RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNENFMjYwMjIwOUYxMUU2ODhFNDk0NTdFMDQwNjNFMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNENFMjYwMTIwOUYxMUU2ODhFNDk0NTdFMDQwNjNFMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDplMjNlNGMwNS04Y2FjLTgwNGQtYjQwNy0zNjQ2MDUzMjc1MTAiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo3ZjJiNjgyMC0xNGY0LTExZTYtYjBhYi04OTc5YTlmYTgwZGYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6emhBcAAABo0lEQVR42qyVv0tCURTHX0/XQqOohiiMmiVpKcJJcAgHwSGjoL/ghc41NUa/tuawpp4gDq4RCoJZYwhJIBWBVDS22PfAV3iY74dyD3x4vHvO+d737rn33JGb6TnNxsJgG6yBWTAB2qAFyuASPCbfX/4l6n3EQsAEdfAKDLACRvk0OC5+05yZD7mJxhlcAT5wDKrgDfzyWeW4j3F1CMftRBOgCHbAEehoztZhnMQXIZzoFV0EObABCtoAhjUtMC8H4SWr6Dk4ACVtCIOw5O2Ds65oBEyCE5fcZxbRTvhUdPC1ERHd4q+rsCuQFtFVVlGF3YKozo3d8pj05eJvyhKJ6BT4UCGKdRV/UER/wJiKf0eRgjKxzqouKFpT2R1NEb0D6x4SvEwclWLp3W3gIeGTe9rJNsG1iNbY0vZcEsbBvcN6Sn4bxar5OWYw4WmYo8oudQiWrWe/wZMlXSo2oGCMeWl8ZaO39Um3SbFBZz1qZhmfYrfq26TzvEbkCnkAGRYnQH+A7xn6JS4MwbxVxG/TjZKWO+qC20kEv+mXM75rd0f9CTAAoTVypGzsKsQAAAAASUVORK5CYII=) no-repeat
+		size: 21px
+		position: absolute calc(50% - 11px) * * 0
+		content: ''
+		filter: hue-rotate(255deg)
+	
+	a
+		text-transform: uppercase
+		font-family: "ProximaNova Bold",sans-serif
+		font-size: 12px
+		color: var(--main-color)
+
+@media screen and (max-width: 660px) and (min-width: 370px)
+	.services
+
+		&__container
+			flex-wrap: wrap
+			margin: 0 0 -15px -15px
+
+		&__item
+			width: calc((100% - 15px * 2) / 2)
+			margin: 0 0 15px 15px
+
+
+@media screen and (max-width: 370px)
+	.services
+
+		&__container
+			flex-wrap: wrap
+
+		&__item
+			width: 100%
+
+			&:not(:last-child)
+				margin-bottom: 15px
