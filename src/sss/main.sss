@@ -406,3 +406,59 @@
 
 			&:not(:last-child)
 				margin-bottom: 15px
+
+.forms
+	
+	&__error
+
+		&-message
+			border: 1px solid #d4d4d4
+			background: #fff
+			color: #000
+			padding: 7px 10px
+			border-radius: 7px
+			position: absolute
+			bottom: 45px
+			right: -6px
+			box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.1)
+			transition: opacity .3s ease
+			user-select: none
+			font-size: 12px
+
+			opacity: 0
+			pointer-events: none
+
+			&:after
+				content: ""
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAIBAMAAADU/bjBAAAAGFBMVEX////V1dXV1dXY2Nji4uL9/f3+/v7///88REMWAAAAA3RSTlMAipDLFSdbAAAAM0lEQVQI12NwKweBMgcGlXQQI0WBgQkkVObEwAAWAgowgITAAiAhsABQyBUiwMAgLAAkAJ+wDc+KWF7qAAAAAElFTkSuQmCC)
+				position: absolute
+				top: calc(100% - 0px)
+				right: 19px
+				height: 8px
+				width: 15px
+
+			&-icon
+				display: block
+				border-radius: 50%
+				position: absolute
+				border: 1px solid #ff0024
+				height: 19px
+				width: 19px
+				background: #fff
+				bottom: -32px
+				right: 16px
+
+				&:before, &:after
+					content: ""
+					position: absolute
+					width: 1px
+					background: #ff0024
+					left: calc(50% - 1px)
+
+				&:before
+					top: 4px
+					height: 8px
+
+				&:after
+					bottom: 4px
+					height: 2px
