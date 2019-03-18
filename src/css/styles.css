@@ -4763,7 +4763,7 @@ font-size:14px;
 
 .menu_theme-index {
 position:absolute;
-bottom:-671px;
+bottom:-660px;
 left:calc(50% - 420px);
 width:845px
 }
@@ -4819,7 +4819,7 @@ height:34px
 
 @media (min-width:992px) and (max-width:1359px) {
 .menu_theme-index {
-bottom:-471px;
+bottom:-460px;
 left:calc(50% - 325px);
 width:675px
 }
@@ -4832,7 +4832,7 @@ width:calc(100% + 110px)
 @media (min-width:768px) and (max-width:991px) {
 .menu_theme-index {
 left:calc(50% - 305px);
-bottom:-471px;
+bottom:-462px;
 width:560px
 }
 
