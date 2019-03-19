@@ -7,6 +7,30 @@
 @import "_ordering.sss"
 @import "_lc.sss"
 
+img[height]
+	height: auto
+	align-self: flex-start
+
+// @media screen and (min-width: 1000px)
+.page
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+
+	&__section
+		flex: 1 1 auto
+
+.mobile-menu
+	z-index: 2
+	background: #fff
+
+	a[href*=tel]
+		padding: 0 20px
+		color: #000
+
+.header, .footer
+	flex: none
+
 .catalogue
 
 
@@ -268,6 +292,9 @@
 		flex-direction: column
 		align-items: flex-start
 
+	.button_1O
+		margin-bottom: 60px !important
+
 	.catalogue__views 
 
 		&:not(:first-child)
@@ -285,6 +312,29 @@
 	.catalogue__views div[class=row]:first-child
 		flex-direction: column-reverse
 		align-items: flex-start
+
+	.nav__item_block-logo
+
+		.symbol_logo
+			transform: scale(1.5) translateY(3px)
+
+			g + g
+				display: none
+
+	#update_ajax
+		margin-bottom: 25px
+
+	.wr-bread-crumb
+		margin-bottom: 10px
+
+	.dropdown
+
+		&:first-child
+			margin-left: 0
+
+		&__content
+			background: hsla(0,0%,100%,1) !important
+			box-shadow: 0px 0px 2px 0 rgba(#000, .4)
 
 .head-message
 	position: fixed

@@ -13,6 +13,7 @@
 
 	&__content
 		margin: rem(47) 0 0
+		width: 100%
 
 		.forms
 
@@ -64,6 +65,7 @@
 
 .orders-menu
 	display: flex
+	flex-wrap: wrap
 
 	&__item
 
@@ -204,13 +206,19 @@
 		position: absolute calc(50% - 9px) * * 0
 
 	&--received
-		background: url("../images/ico-received.png") no-repeat
+
+		&:before
+			background: url("../images/ico-received.png") no-repeat
 
 	&--canceled
-		background: url("../images/ico-canceled.png") no-repeat
+
+		&:before
+			background: url("../images/ico-canceled.png") no-repeat
 
 	&--done
-		background: url("../images/ico-done.png") no-repeat
+
+		&:before
+			background: url("../images/ico-done.png") no-repeat
 
 .detail-order
 

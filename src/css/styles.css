@@ -1585,7 +1585,12 @@ color:#1951da
 .card__content {
 position:relative;
 width:100%;
-height:608px
+/*height:608px*/
+}
+
+.card__content .card__images img:first-child{
+	position: static !important;
+	transform: none !important;
 }
 
 .card__content:hover .card__images img:first-child {
@@ -2472,7 +2477,7 @@ letter-spacing:1.5px
 }
 
 .delivery-card__price:after {
-content: 'Р В Р Р‹Р В РІР‚С™Р В Р Р‹Р РЋРІР‚СљР В Р’В Р вЂ™Р’В±. ';
+content: 'руб.';
 font-size:16px;
 text-transform:uppercase;
 letter-spacing:1px
@@ -6347,7 +6352,7 @@ margin:0 30px 38px
 @media (min-width:768px) and (max-width:991px) {
 .wrapper__card {
 width:340px;
-height:525px
+/*height:525px*/
 }
 }
 
@@ -6355,15 +6360,15 @@ height:525px
 .wrapper__card {
 margin-right:20px;
 width:270px;
-height:460px
+/*height:460px*/
 }
 }
 
 @media (max-width:575px) {
 .wrapper__card {
 margin:30px auto 0;
-max-width:280px;
-height:440px
+/*max-width:280px;*/
+/*height:440px*/
 }
 
 .wrapper__card:first-child {
