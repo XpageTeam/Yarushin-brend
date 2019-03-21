@@ -49,4 +49,34 @@ document.addEventListener("DOMContentLoaded", e => {
 		touch: false,
 		buttons: ["fullscreen", "slideShow", "close"],
 	})
+
+	// $(".customers-slider").each(function(){
+	// 	let $this = $(this);
+
+	// 	$this.slick({
+	// 		slidesToShow: 5,
+	// 		slidesToScroll: 1,
+	// 		appendArrows: $this.closest(".bestsellers__cont").find(".new__title-cont"),
+	// 		responsive: [
+	// 			{
+	// 				breakpoint: 1100,
+	// 				settings: {
+	// 					slidesToShow: 4,
+	// 				}
+	// 			},
+	// 			{
+	// 				breakpoint: 1000,
+	// 				settings: {
+	// 					slidesToShow: 3
+	// 				}
+	// 			},
+	// 			{	
+	// 				breakpoint: 660,
+	// 				settings: {
+	// 					slidesToShow: 2
+	// 				}
+	// 			}
+	// 		]
+	// 	})
+	// })
 })
