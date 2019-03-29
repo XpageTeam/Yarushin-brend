@@ -2476,7 +2476,7 @@ text-transform:uppercase;
 letter-spacing:1.5px
 }
 
-.delivery-card__price:after {
+.delivery-card__price:not(.price-delivery-11):after {
 content: 'руб.';
 font-size:16px;
 text-transform:uppercase;
