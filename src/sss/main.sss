@@ -460,6 +460,36 @@ img[height]
 			display: block
 			width: 100%
 
+	.slick
+
+		&-dots
+			display: flex
+			justify-content: center
+			width: 100%
+
+			li
+				display: block
+
+				&:not(:last-child)
+					margin-right: 15px
+
+				&.slick-active
+
+					button
+						transform: scale(1.3)
+
+			button
+				display: block
+				text-indent: -9999px
+				overflow: hidden
+				padding: 0
+				border-radius: 50%
+				background: #fff
+				border: none
+				size: 10px
+				cursor: pointer
+				transition: transform .3s ease
+
 .bestsellers
 	
 	&__cont
@@ -565,6 +595,18 @@ div.instagram
 
 	.instagramm-block
 		padding: 200px 0 0
+
+.instagramm-block
+
+	.text
+		margin: 0 0 30px
+		display: flex
+
+		&:not(:last-child, :first-child)
+			display: none
+
+		> *
+			margin: 0 10px
 
 @media screen and (max-width: 1200px) and (min-width: 1000px)
 	div.instagram

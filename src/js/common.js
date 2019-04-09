@@ -23,6 +23,24 @@ document.addEventListener("DOMContentLoaded", e => {
 	})()
 
 	;(function(){
+		$(".customers-slider").slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 660,
+					settings: {
+						slidesToShow: 1,
+						autoplay: true,
+						dots: true
+					}
+				}
+			]
+		})
+	})()
+
+	;(function(){
 		const bxFilterTitle = document.querySelectorAll(".bx-filter-parameters-box");
 
 		if (!bxFilterTitle.length)
