@@ -758,3 +758,18 @@ body:not(.main)
 
 		.card__content
 			height: auto !important
+
+
+@media (max-width: 660px)
+	.nav__item_block-logo
+		position: relative
+
+		svg
+			opacity: 0
+
+		&:after
+			content: ""
+			position: absolute -3px * * calc(50% - 10px)
+			background: url("../images/mobile-top-logo.svg") center no-repeat
+			background-size: contain
+			size: 60px 40px
