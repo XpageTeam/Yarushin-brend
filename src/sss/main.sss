@@ -13,6 +13,24 @@ img[height]
 
 // @media screen and (min-width: 1000px)
 
+.od-deliv
+	.bx-sls
+		* 
+			box-size: border-box !important
+
+		.dropdown-block
+			border-radius: 0
+			border: 1px solid var(--border-color)
+			box-shadow: none
+			height: 33px
+			padding: 0 35px 0 30px !important
+
+		.bx-ui-sls-fake
+			padding: 0 35px 0 0 !important
+			width: 97% !important	
+
+
+
 .product-item-container
 	display: flex
 	flex-direction: column
@@ -319,8 +337,12 @@ img[height]
 		outline: 0
 		background: #1951da !important
 
-.dropdown-wrapper
-	position: relative
+.dropdown
+	&-wrapper
+		position: relative
+
+	&__content
+		background: #eee !important
 
 .sizes-table
 	position: absolute calc(100% + 10px) * * 0
