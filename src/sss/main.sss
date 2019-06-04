@@ -13,13 +13,17 @@ img[height]
 
 // @media screen and (min-width: 1000px)
 
-
 .head-catalog__links
-	.link
-		color: #000
+	display: none
+.main
+	.head-catalog__links
+		display: block
 
-		&[href*="/men/"]
-			color: #1951da
+		.link
+			color: #000
+
+			&[href*="/men/"]
+				color: #1951da
 
 .od-deliv
 	.bx-sls
@@ -671,8 +675,10 @@ div.instagram
 		> *
 			margin: 0 10px
 @media screen and (max-width: 767px)
-	.head-catalog__links
-		display: none
+
+	.main
+		.head-catalog__links
+			display: none
 		
 @media screen and (max-width: 1200px) and (min-width: 1000px)
 	div.instagram
